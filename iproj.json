@@ -1,0 +1,7 @@
+{
+  "description": "Gestion de menu d'application",
+  "curlib": "&CURLIB",
+  "postUsrlibl": [
+    "isphere"
+  ]
+}
