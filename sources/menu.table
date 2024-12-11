@@ -1,0 +1,10 @@
+CREATE OR REPLACE TABLE MENU  (
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  menu_name for column Mname VARCHAR(255) NOT NULL,
+  created_by_user for column CRTUSR VARCHAR(10) NOT NULL,
+  created_by_program for column PGMCRT VARCHAR(10) NOT NULL,
+  created_timestamp for column TIMTMPCRT TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+  updated_by_user for column USRUPD VARCHAR(10),
+  updated_by_program for Column PGMUPD VARCHAR(10),
+  updated_timestamp for column TEMTMPUPD TIMESTAMP NOT NULL Generated always for each row on update
+                    as row change Timestamp);
